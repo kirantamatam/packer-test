@@ -23,6 +23,7 @@ source "amazon-ebs" "windows-packer" {
   instance_type = "t2.micro"
   region        = "${var.region}"
   vpc_id	= "vpc-0883ff438531ab735"
+  subnet_id	= "subnet-02f28dd11b97b9e93"
   source_ami_filter {
     filters = {
       name                = "Windows_Server-2019-English-Full-Base*"
