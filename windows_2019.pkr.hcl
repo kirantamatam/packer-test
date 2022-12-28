@@ -22,6 +22,7 @@ source "amazon-ebs" "windows-packer" {
   communicator  = "winrm"
   instance_type = "t2.micro"
   region        = "${var.region}"
+  vpc_id	= "vpc-0883ff438531ab735"
   source_ami_filter {
     filters = {
       name                = "Windows_Server-2019-English-Full-Base*"
